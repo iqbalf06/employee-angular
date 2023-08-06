@@ -26,6 +26,30 @@
   margin-right: 10px;
 }
 
+.it-icon {
+  background-color: #504bde;
+}
+
+.finance-icon {
+  background-color: #009688;
+}
+
+.hr-icon {
+  background-color: #ff5722;
+}
+
+.legal-icon {
+  background-color: #896abd;
+}
+
+.customer-service-icon {
+  background-color: #ff9800;
+}
+
+.administrator-icon {
+  background-color: #795548;
+}
+
 .department-container {
   font-size: 20px;
   font-weight: bold;

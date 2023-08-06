@@ -71,4 +71,23 @@ export class HomeComponent implements OnInit {
         return 'work_outline';
     }
   }
+
+  getIconClass(department: string): string {
+    switch (department) {
+      case 'IT':
+        return 'it-icon';
+      case 'Finance':
+        return 'finance-icon';
+      case 'HR':
+        return 'hr-icon';
+      case 'Legal':
+        return 'legal-icon';
+      case 'Customer Service':
+        return 'customer-service-icon';
+      case 'Administrator':
+        return 'administrator-icon';
+      default:
+        return '';
+    }
+  }
 }

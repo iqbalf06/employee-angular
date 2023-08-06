@@ -19,11 +19,11 @@ import { MatCardModule } from '@angular/material/card';
 
 const routes: Routes = [
   {
-    path: '', component: NavComponent,
+    path: 'employee', component: NavComponent,
     children: [
       {
         path: '',
-        redirectTo: '/employee/home',
+        redirectTo: 'home',
         pathMatch: 'full'
       },
       {

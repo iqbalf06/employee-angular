@@ -3,7 +3,7 @@
     <div class="col-md-4" *ngFor="let departmentCount of departmentCounts">
       <mat-card class="card">
         <mat-card-header>
-          <div class="icon-container">
+          <div class="icon-container" [ngClass]="getIconClass(departmentCount.department)">
             <mat-icon class="icon">{{
               getIconForDepartment(departmentCount.department)
             }}</mat-icon>
