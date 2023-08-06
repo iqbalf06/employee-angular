@@ -1,0 +1,67 @@
+<div class="container mt-5">
+  <div class="input-group btn-search mb-3">
+    <input
+      type="text"
+      placeholder="Type to search ..."
+      class="form-control"
+      [(ngModel)]="searchText"
+      (ngModelChange)="search()"
+    />
+    <button
+      class="btn btn-sm btn-primary d-flex align-items-center"
+      type="button"
+      (click)="search()"
+    >
+      <strong>Search</strong>
+    </button>
+  </div>
+  <div class="d-flex justify-content-between">
+    <h4 class="mb-2">{{ title }}</h4>
+    <div class="mb-2">
+      <button
+        class="btn btn-sm btn-primary d-flex align-items-center"
+        routerLink="/employee/add"
+      >
+        <mat-icon>add</mat-icon><strong>Add Data</strong>
+      </button>
+    </div>
+  </div>
+  <div>
+    <table class="table table-hover table-rounded shadow">
+      <thead>
+        <tr>
+          <th *ngFor="let col of columnTable" class="bg-primary text-white">
+            {{ col }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let data of filteredDataList; let i = index"
+          [class.primary]="i === 0"
+        >
+          <td [ngClass]="getClassByIndex(i)">{{ i + 1 }}</td>
+          <td [ngClass]="getClassByIndex(i)">{{ data.id }}</td>
+          <td [ngClass]="getClassByIndex(i)">{{ data.name }}</td>
+          <td [ngClass]="getClassByIndex(i)">{{ data.dob }}</td>
+          <td [ngClass]="getClassByIndex(i)">{{ data.gender }}</td>
+          <td [ngClass]="getClassByIndex(i)">{{ data.department }}</td>
+          <td [ngClass]="getClassByIndex(i)">
+            <button
+              class="btn btn-sm btn-secondary mx-1"
+              routerLink="/edit/{{ data.id }}"
+            >
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button
+              class="btn btn-sm btn-danger ml-1"
+              (click)="deleteData(data.id)"
+            >
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

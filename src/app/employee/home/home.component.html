@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let departmentCount of departmentCounts">
+      <mat-card class="card">
+        <mat-card-header>
+          <div class="icon-container">
+            <mat-icon class="icon">{{
+              getIconForDepartment(departmentCount.department)
+            }}</mat-icon>
+          </div>
+          <div class="department-container">
+            <span class="department-name">{{
+              departmentCount.department
+            }}</span>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="number">{{ departmentCount.count }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
