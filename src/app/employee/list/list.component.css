@@ -1,3 +1,10 @@
+.container {
+  position: relative;
+  max-width: 160vh;
+  margin: 0 auto;
+}
+
+
 .bg-primary {
   background-color: #318ce7 !important;
 }
@@ -32,4 +39,8 @@
 
 .btn-search {
   max-width: 350px;
+}
+
+.input-group {
+  z-index: 0;
 }

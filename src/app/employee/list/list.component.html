@@ -1,19 +1,17 @@
 <div class="container mt-5">
-  <div class="input-group btn-search mb-3">
-    <input
-      type="text"
-      placeholder="Type to search ..."
-      class="form-control"
-      [(ngModel)]="searchText"
-      (ngModelChange)="search()"
-    />
-    <button
-      class="btn btn-sm btn-primary d-flex align-items-center"
-      type="button"
-      (click)="search()"
-    >
-      <strong>Search</strong>
-    </button>
+  <div>
+    <div class="input-group btn-search mb-3">
+      <input
+        type="text"
+        placeholder="Type to search ..."
+        class="form-control"
+        [(ngModel)]="searchText"
+        (ngModelChange)="search()"
+      />
+      <button class="btn btn-sm btn-primary" type="button" (click)="search()">
+        <strong>Search</strong>
+      </button>
+    </div>
   </div>
   <div class="d-flex justify-content-between">
     <h4 class="mb-2">{{ title }}</h4>

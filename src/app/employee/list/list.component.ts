@@ -22,7 +22,7 @@ export class ListComponent implements OnInit {
   filteredDataList: any[] = [];
 
   searchText: string = '';
-  columnTable = ['#', 'ID', 'Employee Name', 'DOB', 'Gender', 'Department', 'Action'];
+  columnTable = ['#', 'ID', 'Employee Name', 'Date Of Birth', 'Gender', 'Department', 'Action'];
   title = "Employee List";
 
 

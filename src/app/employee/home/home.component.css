@@ -1,3 +1,8 @@
+.container {
+  max-width: 160vh;
+  margin: 0 auto;
+}
+
 .col-md-4 {
   margin-bottom: 20px;
 }
@@ -19,7 +24,6 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  background-color: #3f51b5;
   border-radius: 50%;
   color: #ffffff;
   font-size: 30px;
@@ -28,26 +32,32 @@
 
 .it-icon {
   background-color: #504bde;
+  margin-bottom: 20px;
 }
 
 .finance-icon {
   background-color: #009688;
+  margin-bottom: 20px;
 }
 
 .hr-icon {
   background-color: #ff5722;
+  margin-bottom: 20px;
 }
 
 .legal-icon {
   background-color: #896abd;
+  margin-bottom: 20px;
 }
 
 .customer-service-icon {
   background-color: #ff9800;
+  margin-bottom: 20px;
 }
 
 .administrator-icon {
   background-color: #795548;
+  margin-bottom: 20px;
 }
 
 .department-container {
@@ -59,9 +69,10 @@
 
 .department-name {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .number {
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 50px;
 }
